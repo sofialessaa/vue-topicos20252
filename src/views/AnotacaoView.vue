@@ -1,6 +1,6 @@
 <template>
   <div>
-    <form @submit.prevent="cadastrar">
+    <form @submit.prevent="cadastrar"> <!-- usamos o .prevent para o submit nao dar o reload -->
       <p>
         <label id="textoLabel" for="texto">Texto: </label>
         <input type="text" id="texto" v-model="novaAnotacao.texto" required />
